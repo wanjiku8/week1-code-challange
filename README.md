@@ -1,61 +1,63 @@
-This repository contains JavaScript solutions for the coding challenges provided in Week 1. Each challenge is designed to enhance problem-solving skills by implementing simple yet practical solutions.
+# Week 1 - Code Challenges
 
-Challenges Overview
+This repository contains JavaScript solutions to Week 1's coding challenges. Each challenge addresses a specific real-world scenario and provides a practical solution using programming concepts.
 
-1. Student Grade Generator
-This program converts a student's marks into a corresponding grade.
+---
 
-Description
-Input: Student marks ranging from 0 to 100.
-Output: Grade based on the marks:
-A: Marks greater than 79.
-B: Marks between 60 and 79 (inclusive).
-C: Marks between 50 and 59 (inclusive).
-D: Marks between 40 and 49 (inclusive).
-E: Marks below 40.
+## Challenges Overview
 
+### 1. **Student Grade Generator**
+A program to calculate a student's grade based on their marks.
 
-2. Speed Detector
-This program calculates demerit points based on a car's speed and provides feedback regarding the driver's license status.
+#### **Details**
+- **Input**: Marks ranging from `0` to `100`.
+- **Output**: Corresponding grade:
+  - **A**: Marks greater than `79`.
+  - **B**: Marks between `60` and `79` (inclusive).
+  - **C**: Marks between `50` and `59` (inclusive).
+  - **D**: Marks between `40` and `49` (inclusive).
+  - **E**: Marks below `40`.
 
-Description
-Input: The speed of the car in km/h.
-Output:
-Prints "Ok" if the speed is 70 km/h or below.
-Adds 1 demerit point for every 5 km/h above 70 km/h.
-Prints "License suspended" if the total demerit points exceed 12.
+---
 
+### 2. **Speed Detector**
+A program that evaluates a car's speed and issues warnings or demerit points.
 
-3. Net Salary Calculator
-This program calculates the net salary of an individual by considering deductions such as PAYE, NHIF, and NSSF.
+#### **Details**
+- **Input**: The car's speed (in km/h).
+- **Output**:
+  - Prints `"Ok"` if the speed is `70 km/h` or below.
+  - Adds `1 demerit point` for every additional `5 km/h` above `70`.
+  - Prints `"License suspended"` if demerit points exceed `12`.
 
-Description
-Input: Basic salary and benefits.
-Output:
-Gross Salary: The sum of basic salary and benefits.
-PAYE (Tax): Income tax based on the applicable tax brackets.
-NHIF Deduction: Health insurance deduction as per NHIF rates.
-NSSF Deduction: Pension fund deduction as per NSSF rates.
-Net Salary: Gross salary after deducting PAYE, NHIF, and NSSF.
-Usage
-Clone this repository:
+---
 
-git clone https://github.com/your-username/week1-code-challenges.git
-Navigate to the project directory:
+### 3. **Net Salary Calculator**
+A program to compute an employee's net salary after statutory deductions.
 
-cd week1-code-challenges
-Run the programs using Node.js:
+#### **Details**
+- **Input**: Basic salary and additional benefits.
+- **Output**:
+  - **Gross Salary**: The sum of basic salary and benefits.
+  - **PAYE**: Tax deduction based on applicable tax brackets.
+  - **NHIF Deduction**: Health insurance deduction as per NHIF rates.
+  - **NSSF Deduction**: Pension fund deduction as per NSSF rates.
+  - **Net Salary**: The amount remaining after all deductions.
 
-node studentGradeGenerator.js
-node speedDetector.js
-node netSalaryCalculator.js
+---
 
+## Usage Instructions
 
-Files
-studentGradeGenerator.js: Solution for the Student Grade Generator.
-speedDetector.js: Solution for the Speed Detector.
-netSalaryCalculator.js: Solution for the Net Salary Calculator.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/week1-code-challenges.git
 
+2. Navigate to the project directory
+   
+   cd week1-code-challenges
 
-Author
-Written by Faith, as part of the Week 1 coding challenges.
+3. Run the solutions using Node.js
+   node studentGradeGenerator.js
+   node speedDetector.js
+   node netSalaryCalculator.js
+
